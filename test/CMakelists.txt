@@ -1,0 +1,5 @@
+enable_testing()
+
+use_libraries(gtest-1.7.0-lib-msvcprt)
+
+add_subdirectory(subproject_test)

@@ -56,3 +56,9 @@ function(ignore_warnings)
         add_definitions(/wd"${num}")
     endforeach()
 endfunction()
+
+# 生成目标pdb文件
+function(output_pdb target)
+    set_target_properties(${target} PROPERTIES COMPILE_FLAGS "/Zi")
+    set_target_properties(${target} PROPERTIES LINK_FLAGS "/DEBUG")
+endfunction()
