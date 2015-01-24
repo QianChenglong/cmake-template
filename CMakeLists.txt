@@ -12,9 +12,7 @@ ignore_warnings(
     4800 # int转bool
     )
 
-add_definitions(-DHAVE_REMOTE -DFD_SETSIZE=1024)
-add_definitions(-DENABLE_BOOT)
-add_definitions(-DWIN32 -D_WINDOWS -DUNICODE -D_UNICODE /Zc:wchar_t)
+add_definitions(-DWIN32 -D_WINDOWS -DUNICODE -D_UNICODE)
 
 use_libraries(
     .
